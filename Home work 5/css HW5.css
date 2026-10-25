@@ -1,0 +1,52 @@
+.table1{
+    width: 50%;
+    border-collapse: collapse;
+}
+.new{
+    width: 600px;
+    height: 600px;
+}
+.k{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    position: relative;
+    z-index: 1;
+    
+}
+.k2{
+    background-color: aqua;
+    /* position: absolute; */
+    top: 60px;
+    left: 30px;
+    position: fixed;
+}
+.k3{
+    background-color: green;
+    position: absolute;
+    right: 100px;
+}
+.k4{
+    background-color: blueviolet;
+    position: sticky;
+    left: 50px;
+    top: 0px;
+}
+.k5{
+    background-color: chocolate;
+}
+.k6{
+    background-color: brown;
+}
+
+.card{
+    margin: 20px;
+    padding: 15px 20px;
+    border: 2px solid red;
+    border-radius: 5px;
+    position: relative;
+}
+.card .rr{
+    position: absolute;
+    top: 0;
+}

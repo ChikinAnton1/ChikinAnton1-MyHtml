@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./form.css">
+</head>
+<body>
+    
+    <div class="formconteiner">
+        <div class="h1">
+            <h1>Форма </h1>
+        </div>
+        <form action="./form-filte.html" class="form">
+            <div class="name">
+                <label for="name" class="namelab">Ім'я</label> 
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="lname">
+                <label for="lname">Прізвище</label>
+                <input type="text" id="lname" name="lname" required>
+            </div>
+            <div class="password">
+                <label for="password"> Пароль </label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="repassword">
+                <label for="repassword">Повторити пароль</label>
+                <input type="password" id="repassword" name="repassword" required>
+            </div>
+            <div class="date">
+                <label for="date">Дата народження</label>
+                <input type="date" name="date" id="date" required>
+            </div>
+            <div class="sex">
+                <label for="sex">Стать</label>
+                <select name="sex" id="sex" required>
+                    <option value="male">Чоловіча</option>
+                    <option value="female">Жіноча</option>
+                </select>
+            </div>
+            <div class="old">
+                <label for="old">Вік</label>
+                <input type="number" name="old" id="old" required>
+            </div>
+            <div class="desc">
+                <label for="desc">Опис</label>
+                <textarea name="desc" id="desc" required></textarea>
+            </div>
+            <div class="submit">
+                <input type="submit" value="Надіслати" id="submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

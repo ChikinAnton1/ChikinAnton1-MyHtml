@@ -1,0 +1,98 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home work 3</title>
+</head>
+<body>
+    <style>
+        body {
+            margin: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            }
+        header{
+            background-color: darkgray;
+            border: 2px solid black;
+            border-radius: 5px;
+            text-align: center;
+            padding: 10px;
+        }
+        main{
+            padding: 20px;
+        }
+        .def{
+            border: 2px solid black;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+        .ex{
+            border: 1px dashed black;
+            margin: 20px;
+            padding: 10px;
+            background-color: rgb(207, 204, 204);
+        }
+        span{
+            padding-left: 10px;
+            border-left: 2px solid rgba(0, 0, 0, .5);
+        }
+        #picture{
+            text-align: center;
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 10px;
+        }
+    </style>
+
+    <header>
+        <h1>Домашнє завдання третього уроку</h1>
+    </header>
+    <main>
+        <section class="def">
+            <h2> Відносний шлях </h2>
+            <p>
+                Відносний шлях до файлу вказує на файл відносно поточного розташування HTML файлу.
+            </p>
+            <div class="ex">
+                <p>Приклади відносного шляху:</p>
+                <p>1. Розташування зображення відносно розташування кореневої папки:</p>
+                <span><i>img src="./example.png" alt"example"</i></span>
+                <p>2. Розташування зображення на один рівень вище відносно кореневої папки:</p>
+                <span><i> img src="../example.png" alt"example" </i></span>
+            </div>
+        </section>
+
+        <section class="def">
+                <h2> Абсолютний шлях </h2>
+                <p>
+                    Абсолютний шлях до файлу - це повна адреса де розташоване зображення.
+                </p>
+            <div class="ex">
+                <p>Приклади абсолютного шляху:</p>
+                <p>1. Абослютний шлях до зображення на компьютері:</p>
+                <span><i>img src="D:\images\foto\example.png" alt"example"</i></span>
+                <p>2. Абсолютний шлях до зображення в інтнеті:</p>
+                <span><i>img src="https://example.ua/image/example.jpg" alt"example"</i></span>
+            </div>
+        </section>
+
+        <section id="picture">
+            <h2>Скачені медіафайли</h2>
+            <h3> Картинки </h3>
+            <img src="./picture1.jpg" width="500" alt="dog">
+            <img src="./picture2.jpg" width="500" alt="dog">
+            <img src="./picture3.jpg" width="500" alt="dog">
+            <h3> Відео </h3>
+            <video src="./video.mp4" controls width="500"></video>
+            <h3> Аудіо </h3>
+            <audio src="./audio.mp3" controls></audio>
+        
+            <h2>Медіафайли з інтернету</h2>
+            <img src="https://cdn.pixabay.com/photo/2016/01/20/13/05/cat-1151519_1280.jpg" width="500" alt="delete">
+            <img src="https://cdn.pixabay.com/photo/2019/11/08/11/56/kitten-4611189_640.jpg" width="500" alt="delete">
+            <img src="https://cdn.pixabay.com/photo/2021/08/23/17/53/cat-6568422_640.jpg" width="500" alt="delete">
+        </section>
+    </main>
+</body>
+</html>

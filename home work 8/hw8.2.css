@@ -1,0 +1,215 @@
+.gridbox{
+    display: grid;
+    width: 1000px;
+    height: 900px;
+    border: 3px solid red;
+    grid-template-rows: 300px 200px 400px;
+}
+.foot{
+    display: grid;
+    width: 100%;
+    background-color: pink;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: 150px auto 150px;
+}
+.textshapka{
+    grid-column-start: 2;
+    justify-self: center;
+}
+.white{
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 8;
+    background-color: white;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: 100px auto 100px;
+}
+.black{
+    background-color: black;
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+.nav{
+    display: grid;
+    width: 100%;
+    grid-template-areas: 
+    "menu menu menu menu"
+    "box1 box2 box3 box4"
+    "box5 box5 box5 box5";
+    grid-template-rows: 15px 170px 15px;
+}
+.menu{
+    grid-area: menu;
+    background-color: gray;
+    text-align: center;
+}
+.box1{
+    grid-area: box1;
+    background-color: red;
+}
+.box2{
+    grid-area: box2;
+    background-color: orange;
+}
+.box3{
+    grid-area: box3;
+    background-color: aqua;
+}
+.box4{
+    grid-area: box4;
+    background-color: yellow;
+}
+.box5{
+    grid-area: box5;
+    background-color: gray;
+}
+.colums{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+}
+.colum1{
+    display: grid;
+    background-color: green;
+    grid-template-columns: 60px auto 60px;
+    grid-template-rows: 80px auto;
+    text-align: center;
+}
+.leftblock{
+    justify-self: center;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.left{
+    display: grid;
+    background-color: orange;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: 50px auto;
+}
+.textleft{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.a-left{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: pink;
+}
+.b-left{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: yellow;
+}
+.colum2{
+    background-color: aqua;
+    display: grid;
+    grid-template-rows: 80px auto;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+.textcentr{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.r-centr{
+    background-color: red;
+    height: 100%;
+    width: 100%;
+}
+.o-centr{
+    background-color: orange;
+    width: 100%;
+    height: 100%;
+}
+.a-centr{
+    background-color: yellow;
+    display: grid;
+    grid-template-rows: 40px 170px 110px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-start: 2;
+    grid-column-end: 3;
+    width: 100%;
+    text-align: center;
+}
+.texta-centr{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.a-c{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-color: orange;
+}
+.b-c{
+    background-color: red;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.colum3{
+    display: grid;
+    grid-template-rows: 100px repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    background-color: blue;
+    text-align: center;
+}
+.textright{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.a-right{
+    grid-row-start: 4;
+    grid-row-end: 6;
+    background-color: aqua;
+}
+.y-right{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    background-color: yellow;
+}
+.o-right{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-color: orange;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+.text1{
+    background-color: black;
+    color: aqua;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    align-content: center;
+}
+.text2{
+    background-color: black;
+    color: aqua;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    align-content: center;
+}

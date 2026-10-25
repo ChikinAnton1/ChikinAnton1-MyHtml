@@ -1,0 +1,106 @@
+body{
+    margin: 0;
+}
+.formconteiner{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(111, 207, 245);
+}
+h1{
+    margin: 0 0 10px 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+.form{
+    display: grid;
+    border: 1px solid black;
+    border-radius: 15px;
+    height: 300px;
+    width: 500px;
+    grid-template-columns: 250px 250px;
+    grid-template-areas: 
+    "name password"
+    "lname repassword"
+    "date sex"
+    "old desc"
+    "submit submit";
+    justify-items: center;
+    align-items: center;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(6, 189, 245);
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.4);
+}
+.name{
+    grid-area: name;
+}
+.lname{
+    grid-area: lname;
+}
+.password{
+    grid-area: password;
+}
+.repassword{
+    grid-area: repassword;
+}
+.date{
+    grid-area: date;
+}
+.sex{
+    grid-area: sex;
+}
+.old{
+    grid-area: old;
+}
+.desc{
+    grid-area: desc;
+}
+.submit{
+    grid-area: submit;
+    padding-top: 10px;
+}
+label{
+    font-weight: bold;
+    display: block;
+}
+#date, #sex{
+    width: 177px;
+    appearance: none;
+}
+#desc{
+    width: 177px;
+    height: 56px;
+}
+#name, #lname, #password, #repassword, #date, #sex, #old, #desc{
+    background-color: rgb(126, 145, 187);
+    border: 0;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+#submit{
+    border: 0;
+    border-radius: 15px;
+    height: 30px;
+    width: 90px;
+    background-color: rgb(126, 145, 187);
+    transition: 1.5s;
+    box-shadow: 3px 3px 10px 2px rgba(0, 0, 0, 0.5);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+#submit:hover{
+    background-color: rgb(80, 113, 184);
+}
+#name:focus, #lname:focus, #password:focus, #repassword:focus, #date:focus, #sex:focus, #old:focus, #desc:focus{
+    background: rgb(80, 113, 184);
+    outline: 1px solid rgb(80, 113, 184);
+}
+#old::-webkit-inner-spin-button, #old::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}

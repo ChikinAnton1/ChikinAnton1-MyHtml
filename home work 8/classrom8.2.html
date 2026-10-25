@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .gr{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(4, 80px);
+            grid-auto-rows: 80px;
+            text-align: center;
+        }
+        .nav{
+            background-color: bisque;
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        .sid{
+            background-color: green;
+            grid-row-start: 2;
+            grid-row-end: 4;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(5, 4fr);
+        }
+        .con{
+            background-color: blueviolet;
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+        .art{
+            background-color: aqua;
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        .fot{
+            background-color: brown;
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        .sidin{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 4;
+            background-color: black;
+            color: white;
+            justify-items: center;
+            align-items: center;
+        }
+        *{
+            border: 1px solid red;
+        }
+    </style>
+
+
+    <div class="gr">
+        <div class="nav">header</div>
+        <div class="sid">sidebar
+            <div class="sidin"><p>text</p></div>
+        </div>
+        <div class="con">content</div>
+        <div class="art">article</div>
+        <div class="fot">footer</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+.box{
+    display: grid;
+    grid-template-areas: 
+    "head head head head"
+    "box1 box2 box3 box4"
+    "foot foot foot foot";
+    grid-auto-columns: 1fr;
+    grid-template-rows: 200px 500px 200px;
+}
+.el1{
+    grid-area: head;
+    background-color: orange;
+}
+.el2{
+    grid-area: box1;
+    background-color: red;
+}
+.el3{
+    grid-area: box2;
+    background-color: green;
+}
+.el4{
+    grid-area: box3;
+    background-color: blue;
+}
+.el5{
+    grid-area: box4;
+    background-color:black;
+}
+.el6{
+    grid-area: foot;
+    background-color: orange;
+}

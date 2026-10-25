@@ -1,0 +1,106 @@
+#firstfille{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    background-color: rgb(218, 218, 218);
+    text-align: center;
+}.head{
+    padding: 10px;
+    background-color: rgb(128, 128, 128);
+    
+}
+.navigation{
+    background-color: rgb(155, 152, 152);
+    padding: 12px 10px;
+    border-radius: 5px;
+}
+.navigation a{
+    color: black;
+    text-decoration: none;
+    margin: 0px 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: .5s;
+}
+a:hover, a:active, a:visited {
+    background-color: #007bff;
+    font-size: 110%;
+    color: black;
+    transition: .5s;
+}
+img, video, audio{
+    width: 75%;
+}
+.center{
+    background-color: white;
+    margin: 20px 25%;
+    border-radius: 5px;
+    padding: 20px;
+}
+.center p{
+    font-size: 19px;
+    font-weight: 600;
+}
+
+
+/* 1 селектор по ID */
+#secondfille{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    background-color: rgb(142, 173, 240);
+}
+/* 2 селектор класу */
+.head2{
+    color: white;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(0, 60, 255);
+}
+/* 3 селектор по вкладеності */
+.block h2{
+    text-align: center;
+}
+.block{
+    background-color: azure;
+    border-radius: 5px;
+    margin: 20px 30%;
+    padding: 30px;
+}
+/* 4 додає контент перед тегом*/
+h2::before{
+    content: "🎬";
+}
+/* 5 додає контент після тегу */
+h2::after{
+    content: "🎬";
+}
+/* 6 перший елемент тегу */
+ol li:first-child{
+    color: rgb(98, 149, 216);
+}
+/* 7 */
+h2 + ul{
+    background-color: rgba(149, 166, 204, 0.664);
+    border-radius: 5px;
+}
+/* 8 селктор до всього */
+*{
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+/* 9 селектор анімації наведення */
+li:hover{
+    background-color: rgb(141, 236, 236);
+}
+/* 10 селектор анімації дії  */
+li:active{
+    background-color: rgb(236, 8, 8);
+}
+/* 11 селектор першої літери тексту в тегу*/
+li::first-letter{
+    color: blueviolet;
+}
+/* 12 бере останній елемент */
+li:last-child{
+    background-color: chartreuse;
+}

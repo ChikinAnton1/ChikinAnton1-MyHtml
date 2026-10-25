@@ -1,0 +1,119 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+    .k{
+    height: 100px;
+    width: 100px;
+}
+.k1:hover{
+    background-color: red;
+    /* width: 200px;
+    height: 200px; */
+    /* margin-top: 200px;
+    margin-left: 200px; */
+    /* transform: translate(200px, 200px); */
+    transform: scale(1.5);
+    /* transform: rotate(720deg); */
+    /* transform: translate(200px, 200px) scale(1.5) rotate(720deg); */
+}
+.k1{
+    background-color: orange;
+    /* display: inline; */
+    /* display: none; */
+    transition: 3s;
+}
+.k2:active{
+    background-color: black;
+}
+    .k2{
+    background-color: greenyellow;
+    /* visibility: visible; */
+    /* visibility: hidden; */
+    /* visibility: collapse; */
+    
+}
+    .k3{
+    background-color: blueviolet;
+    /* opacity: 0.3; */
+}
+.sp{
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+    /* display: block; */
+    /* display: inline-block; */
+}
+.sp:hover{
+    animation: 2s firstanimation;
+
+}
+img{
+    /* filter: blur(5px); */
+    /* filter: contrast(.5); */
+    /* filter: brightness(0.5); */
+    /* filter: grayscale(1); */
+    /* transition: 3s; */
+    /* filter: hue-rotate(900deg); */
+    /* filter: opacity(.5); */
+
+}
+img:hover{
+    /* filter: grayscale(0); */
+    animation: 11s firstanimation;
+}
+@keyframes firstanimation{
+    /* from {
+        background-color: black;
+    }
+    to{
+        background-color: orange;
+    } */
+     0%{
+        background-color: blue;
+     }
+     20%{
+        background-color: aqua;
+        transform: translate(250px, 0);
+     }
+     40%{
+        background-color: brown;
+        transform: translate(250px, 250px);
+     }
+     80%{
+        background-color: bisque;
+        transform: translate(0, 250px);
+     }
+     100%{
+        background-color: blue;
+        transform: translate(0,0);
+     }
+}
+.k4{
+    animation: 3s firstanimation ease-out infinite;
+}
+.k4:hover{
+    /* animation: 3s firstanimation; */
+}
+    </style>
+
+
+<div class="k k1">text 1</div>
+<div class="k k2">text 2</div>
+<div class="k k3">text 3</div>
+
+<span class="sp"> text4</span>
+<span>text4</span>
+
+<p hidden>
+    1232314
+</p>
+
+<img src="../home work 4/doufourspitze-m-mountain-peak.jpg" width="300" alt="">
+<div class="k k4"></div>
+</body>
+</html>

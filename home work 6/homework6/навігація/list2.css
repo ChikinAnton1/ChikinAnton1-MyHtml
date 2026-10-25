@@ -1,0 +1,29 @@
+.k4{
+    width: 250px;
+    height: 250px;
+    margin: 40px;
+}
+.k5{
+    background-color: goldenrod;
+    padding: 10px;
+    display: inline-block;
+}
+.k6{
+    background-color: darkgoldenrod;
+    display: inline;
+}
+.k7{
+    background-color: darkorange;
+    visibility: hidden;
+}
+.k8{
+    visibility: visible;
+    background-color: orange;
+}
+.table1{
+    width: 200px;
+    height: 200px;
+}
+.visability{
+    visibility: collapse;
+}

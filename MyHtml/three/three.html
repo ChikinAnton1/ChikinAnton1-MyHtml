@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .wrap{
+            display: grid;
+            border: 2px solid black;
+            /* grid-template-columns: 200px 200px 400px;
+            grid-template-rows: 100px 100px 250px;
+            grid-auto-rows: 120px;
+            grid-auto-columns: 100px; */
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 50px 50px 50px 50px;
+
+            justify-items: center;
+            align-items: center;
+        }
+        .k9{
+            justify-self: end;
+            align-self: end;
+        }
+        .grid{
+            display: grid;
+            grid-template-areas:
+            'nav nav nav'
+            'sid con con'
+            'sid con con'
+            'art art art'
+            'foot foot foot';
+            grid-auto-rows: 50px;
+            grid-auto-columns: 1fr;
+        }
+        .nav{
+            grid-area: nav;
+            background-color: bisque;
+        }
+        .sid{
+            grid-area: sid;
+            background-color: green;
+        }
+        .con{
+            grid-area: con;
+            background-color: blueviolet;
+        }
+        .art{
+            grid-area: art;
+            background-color: aqua;
+        }
+        .foot{
+            grid-area: foot;
+            background-color: brown;
+        }
+
+    </style>
+    <div class="wrap">
+        <div class="el">1</div>
+        <div class="el">2</div>
+        <div class="el">3</div>
+        <div class="el">4</div>
+        <div class="el">5</div>
+        <div class="el">6</div>
+        <div class="el">7</div>
+        <div class="el">8</div>
+        <div class="el k9">9</div>
+        <div class="el">10</div>
+        <div class="el">11</div>
+    </div>
+
+    <div class="grid">
+        <div class="nav">Header</div>
+        <div class="sid">Sidebar</div>
+        <div class="con">content</div>
+        <div class="art">article</div>
+        <div class="foot">footer</div>
+    </div>
+</body>
+</html>

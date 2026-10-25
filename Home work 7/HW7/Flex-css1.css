@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+.k1{
+    background-color: orange;
+    height: 15vh;
+}
+.conteiner{
+    display: flex;
+    height: 70vh;
+}
+.k{
+    flex-grow: 1;
+}
+.k2{
+    background-color: red;
+}
+.k3{
+    background-color: green;
+}
+.k4{
+    background-color: blue;
+}
+.k5{
+    background-color: black;
+}

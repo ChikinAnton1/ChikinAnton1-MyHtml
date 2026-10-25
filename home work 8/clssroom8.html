@@ -1,0 +1,91 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .wrap{
+            display: grid;
+            /* grid-template-columns: 1fr 2fr 100px; */
+            grid-template-rows: 50px 50px 50px 50px;
+            grid-template-columns: repeat(3, 200px);
+
+            grid-auto-rows: 120px;
+            /* grid-auto-columns: 100px; */
+
+            justify-items: center;
+            /* justify-items: end; */
+            /* justify-items: start; */
+
+            align-items: center;
+            /* align-items: start; */
+            /* align-items: end; */
+
+        }
+
+        .k9{
+            justify-self: center;
+            align-self: start;
+        }
+
+        .gr{
+            display: grid;
+            grid-template-areas: 
+                "nav nav nav"
+                "sid con con"
+                "sid con con"
+                "art art art"
+                "fot fot fot";
+                grid-auto-rows: 50px;
+                grid-auto-columns: 1fr;
+            
+        }
+        .nav{
+            grid-area: nav;
+            background-color: bisque;
+        }
+        .sid{
+            grid-area: sid;
+            background-color: green;
+        }
+        .con{
+            grid-area: con;
+            background-color: blueviolet;
+            /* justify-self: center;
+            align-self: center; */
+        }
+        .art{
+            grid-area: art;
+            background-color: aqua;
+        }
+        .fot{
+            grid-area: fot;
+            background-color: brown;
+        }
+    </style>
+
+    <div class="wrap">
+        <div class="el">1</div>
+        <div class="el">2</div>
+        <div class="el">3</div>
+        <div class="el">4</div>
+        <div class="el">5</div>
+        <div class="el">6</div>
+        <div class="el">7</div>
+        <div class="el">8</div>
+        <div class="el k9">9</div>
+        <div class="el">10</div>
+        <div class="el">11</div>
+    </div>
+
+    <div class="gr">
+        <div class="nav">header</div>
+        <div class="sid">sidebar</div>
+        <div class="con">content</div>
+        <div class="art">article</div>
+        <div class="fot">footer</div>
+    </div>
+</body>
+</html>

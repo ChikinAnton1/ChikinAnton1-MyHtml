@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./form-filterCSS.css">
+</head>
+<body>
+    <div class="filterconteiner">
+        <form action="" class="form">
+            <div class="product">
+                <label for="product">Тип продкутку</label>
+                <select name="product" id="product">
+                    <option value="phone">Телефон</option>
+                    <option value="laptop">Ноутбук</option>
+                    <option value="vcleaner">Пилесос</option>
+                    <option value="charger">Зарядка</option>
+                </select>
+            </div>
+            <div class="power">
+                <div>
+                <input type="checkbox" name="15w" id="15w">
+                <label for="15w">15w</label>
+                </div>
+                <div>
+                <input type="checkbox" name="25w" id="25w">
+                <label for="25w">25w</label>
+                </div>
+                <div>
+                <input type="checkbox" name="65w" id="65w">
+                <label for="65w">65w</label>
+                </div>
+                <div>
+                <input type="checkbox" name="100w" id="100w">
+                <label for="100w">100w</label>
+                </div>
+                <div>
+                <input type="checkbox" name="200w" id="200w">
+                <label for="200w">200w</label>
+                </div>
+            </div>
+            <div class="brand">
+                <div>
+                <input type="checkbox" name="samsung" id="samsung">
+                <label for="samsung">Samsung</label>
+                </div>
+                <div>
+                <input type="checkbox" name="lg" id="lg">
+                <label for="lg">Lg</label>
+                </div>
+                <div>
+                <input type="checkbox" name="asus" id="asus">
+                <label for="asus">Asus</label>
+                </div>
+                <div>
+                <input type="checkbox" name="lenovo" id="lenovo">
+                <label for="lenovo">Lenovo</label>
+                </div>
+            </div>
+            <div class="sorting">
+                <label for="sorting">Сортування:</label>
+                <select name="sorting" id="sorting">
+                    <option value="cheap">від дешевих</option>
+                    <option value="expensive">від дорогих</option>
+                    <option value="rating">по рейтингу</option>
+                </select>
+            </div>
+            <div class="namemodel">
+                <label for="namemodel">Назва моделі</label>
+                <input type="text" name="namemodel" id="namemodel">
+            </div>
+            <div class="submit">
+                <input type="submit" id="submit" value="Застосувати">
+            </div>
+        </form>
+        <div class="frame">
+            <iframe src="./Form.html" frameborder="0" width="502px" height="400px"></iframe>
+        </div>
+    </div>
+</body>
+</html>

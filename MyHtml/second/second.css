@@ -1,0 +1,67 @@
+.k{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    margin: 5px;
+    display: inline-block;
+}
+.k1, .k4{
+    border: 4px solid red;
+}
+.k2, .k5{
+    border: 4px solid yellowgreen;
+}
+.k3, .k6{
+    border: 4px solid orange;
+}
+.wr{
+    height: 300px;
+    border: 2px solid black;
+    display: flex;
+    /* justify-content: center; */
+    /* justify-content: flex-end; */
+    /* justify-content: flex-start; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+
+    /* align-items: flex-end; */
+    /* align-items: center; */
+    /* align-items: flex-start; */
+    /* align-items: baseline; */
+
+    /* flex-wrap: nowrap; */
+    /* flex-wrap: wrap; */
+
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    /* flex-direction: row; */
+    /* align-items: center; */
+
+
+}
+.k1{
+    /* align-self: flex-start; */
+    order: 1;
+}
+.k2{
+    /* align-self: flex-end; */
+    order: 2;
+    /* flex-grow: 2; */
+    /* flex-shrink: 2; */
+    /* flex-basis: 10%; */
+    flex: 2 2 10%;
+}
+.k3{
+    /* align-self: flex-start; */
+    order: 3;
+}
+.k4{
+    order: 4;
+}
+.k5{
+    order: 5;
+}
+.k6{
+    order: 6;
+}

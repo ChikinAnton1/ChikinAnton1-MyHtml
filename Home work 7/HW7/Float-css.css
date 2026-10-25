@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+.headfoot{
+    height: 15vh;
+    width: 100%;
+    background-color: orange;
+    clear: both;
+}
+.k{
+    float: left;
+    width: 25%;
+    height: 70vh;
+}
+.k1{
+    background-color: red;
+}
+.k2{
+    background-color: green;
+}
+.k3{
+    background-color: blue;
+}
+.k4{
+    background-color: black;
+}

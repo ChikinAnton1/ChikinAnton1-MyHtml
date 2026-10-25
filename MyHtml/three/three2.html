@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(5, 80px);
+        }
+        .nav{
+            background-color: bisque;
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        .sid{
+            background-color: green;
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+        .con{
+            background-color: blueviolet;
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+        .art{
+            background-color: aqua;
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        .foot{
+            background-color: brown;
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+    </style>
+    <div class="grid">
+        <div class="nav">Header</div>
+        <div class="sid">Sidebar</div>
+        <div class="con">content</div>
+        <div class="art">article</div>
+        <div class="foot">footer</div>
+    </div>
+</body>
+</html>

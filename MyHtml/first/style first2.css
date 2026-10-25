@@ -1,0 +1,79 @@
+.k {
+    width: 100px;
+    height: 100px;
+}
+.k1 {
+    background-color: blue;
+    /* display: inline; */
+    /* display: none; */
+    transition: 3s;
+}
+    .k1:hover{
+    background-color: rgb(255, 0, 242);
+    /* width: 130px;
+    height: 130px; */
+
+    /* margin-top: 10px;
+    margin-left: 10px; */
+
+    /* transform: translate(30px, 200px); */
+    /* transform: scale(1.1); */
+    /* transform: rotate(720deg);
+    transform: scale(1.5);
+    transform: translate(50px, 50px); */
+}
+.k2 {
+    background-color: red;
+    /* visibility: visible; */
+    /* visibility: hidden; */
+    /* visibility: collapse; */
+}
+.k2:active {
+    background-color: aqua;
+}
+.k3 {
+    background-color: yellow;
+    box-sizing: content-box;
+    opacity: .5;
+}
+.line {
+    background-color: blueviolet;
+    width: 100px;
+    height: 100px;
+    /* display: block; */
+    display: inline-block;
+}
+.k4{
+    background-color: brown;
+    animation: 4s firstanimation infinite;
+}
+.k4:hover{
+}
+@keyframes firstanimation{
+    /* from {
+        background-color: black;
+    }
+    to {
+        background-color: orange;
+    } */
+    0%{
+        background-color: brown;
+        transform: translate(0px, 0px);
+    }
+    20%{
+        background-color: aqua;
+        transform: translate(50px, 0px);
+    }
+    40%{
+        background-color: chartreuse;
+        transform: translate(50px, 50px);
+    }
+    80%{
+        background-color: darkblue;
+        transform: translate(0px, 50px);
+    }
+    100%{
+        background-color: black;
+        transform: translate(0px, 0px);
+    }
+}

@@ -1,0 +1,87 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .k{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            margin: 5px;
+            /* float: left; */
+            display: inline-block;
+            /* display: flex; */
+        }
+
+        .k1, .k4 {
+            border: 4px solid red;
+        }
+
+        .k2, .k5 {
+            border: 4px solid greenyellow;
+        }
+
+        .k3, .k6 {
+            border: 4px solid goldenrod;
+        }
+
+        .wr{
+            height: 300px;
+            border: 2px solid black;
+            display: flex;
+            /* justify-content: center; */
+            /* justify-content: flex-end; */
+            /* justify-content: space-between; */
+            /* justify-content: space-around; */
+            justify-content: space-evenly;
+
+            /* align-items: flex-end; */
+            align-items: center;
+            /* align-items: flex-start; */
+            /* align-items: baseline; */
+
+        }
+        .k1{
+            /* align-self: flex-start; */
+            order: 1;
+        }
+        .k2{
+            /* align-self: flex-end; */
+            order: 2;
+        }
+        .k3{
+            /* align-self: flex-start; */
+            order: 6;
+        }
+        .k4{
+            order: 4;
+        }
+        .k5{
+            order: 5;
+        }
+        .k6{
+            order: 3;
+        }
+    </style>
+
+
+    <div class="wr">
+        <div class="k k1">1</div>
+        <div class="k k2">2</div>
+        <div class="k k3">3</div>
+        <div class="k k4">4</div>
+        <div class="k k5">5</div>
+        <div class="k k6">6</div>
+    </div>
+
+    <div class="k k1">1</div>
+        <div class="k k2">2</div>
+        <div class="k k3">3</div>
+        <div class="k k4">4</div>
+        <div class="k k5">5</div>
+        <div class="k k6">6</div>
+</body>
+</html>

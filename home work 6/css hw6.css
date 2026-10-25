@@ -1,0 +1,36 @@
+.k{
+    height: 100px;
+    width: 100px;
+}
+.k1{
+    background-color: black;
+    float: left;
+}
+.k2{
+    background-color: greenyellow;
+    float: left;
+}
+.k3{
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    /* float: right; */
+    clear: both;
+    color: silver;
+
+
+    /* overflow: scroll; */
+    /* overflow: visible; */
+    overflow: auto;
+    /* overflow: hidden; */
+
+    /* overflow-y: scroll;
+    overflow-x: hidden; */
+}
+.k4{
+    /* width: 200px; */
+    height: 200px;
+    padding: 30px;
+    background-color: red;
+    box-sizing: border-box;
+}
